@@ -28,6 +28,14 @@ will train an AC-GAN on the `MNIST` dataset with GPU #0 and output the weight fi
 
 Run `python train_acgan.py --help` to see more available argument options.
 
+### Training classifier
+
+
+You have to use the class like zico_mnist and write some code to train a clssifier, put checkpoint under asset/pretrained/zico_mnist. 
+
+```bash
+python train_zico.py
+```
 ### Generative Adversarial Attack
 
 After the AC-GAN is trained, you can use `main.py` to do targeted / untargeted attack. You can also use `main.py` to evaluate the accuracy and PGD-robustness of a trained neural network classifier. For example, the following command
